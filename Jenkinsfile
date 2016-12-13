@@ -1,5 +1,5 @@
 node {
-	stage 'BUILD' {
+	stage('BUILD') {
 		build 'freestyle'
 	}
 }
