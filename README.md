@@ -1,4 +1,3 @@
 # freestyle
-yo
 wazah
 
