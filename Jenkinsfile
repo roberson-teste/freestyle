@@ -1,11 +1,12 @@
+//properties([disableConcurrentBuilds()])
+
 node {
-	stage('BUILD') {
-		try {
-			build 'freestyle'
-		} catch(e) {
-			echo "ERROR: $e"
-			emailextrecipients([[$class: 'DevelopersRecipientProvider'], [$class: 'CulpritsRecipientProvider'], [$class: 'RequesterRecipientProvider'], [$class: 'FailingTestSuspectsRecipientProvider'], [$class: 'FirstFailingBuildSuspectsRecipientProvider'], [$class: 'UpstreamComitterRecipientProvider']])
-			throw e
-		}
+	stage('BUILD') {		
+		echo 'sleeping'
+		
+		sh 'sleep 60'
+
+		echo 'waking up'
+		echo 'awake'
 	}
 }
