@@ -9,7 +9,7 @@ node {
 
 	stage('BUILD') {
         try {
-		    //buildAll()
+		    buildAll()
         } finally {
             sendEmails()
         }
