@@ -10,5 +10,4 @@ node {
 		echo 'awake'
 	}
 }
-//one
 //two
