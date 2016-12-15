@@ -4,7 +4,7 @@ node {
 	stage('BUILD') {		
 		echo 'sleeping'
 		
-		bat 'timeout 60'
+		bat 'ping 127.0.0.1 -n 41 > nul'
 
 		echo 'waking up'
 		echo 'awake'
