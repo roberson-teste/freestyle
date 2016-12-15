@@ -1,5 +1,4 @@
 # freestyle
-bah
 yo
 wazah
 
