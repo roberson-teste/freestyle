@@ -5,7 +5,7 @@ node {
 	stage('BUILD') {
 		checkout scm
 		//checkout()
-		echo $env
+		echo ${env}
 	}
 
 	stage('BUILD') {
