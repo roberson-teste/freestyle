@@ -17,6 +17,7 @@ node {
         } finally {
             sendEmails()
         }
+		sh 'break-build'
 	}
 
 }
