@@ -5,7 +5,10 @@ node {
 	stage('BUILD') {
 		checkout scm
 		//checkout()
-		sh 'echo env'
+        echo '========================='
+        sh 'env > env.txt'
+        sh 'cat env.txt'
+        echo '========================='
 	}
 
 	stage('BUILD') {
